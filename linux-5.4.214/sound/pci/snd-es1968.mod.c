@@ -1,0 +1,124 @@
+#include <linux/build-salt.h>
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+BUILD_SALT;
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__section(.gnu.linkonce.this_module) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef CONFIG_RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used __section(__versions) = {
+	{ 0xed93c0b3, "module_layout" },
+	{ 0xe56a9336, "snd_pcm_format_width" },
+	{ 0x2d3385d3, "system_wq" },
+	{ 0x85bd1608, "__request_region" },
+	{ 0x72a990a4, "kmalloc_caches" },
+	{ 0xf9a482f9, "msleep" },
+	{ 0xd712aabe, "pci_write_config_word" },
+	{ 0x765395c3, "param_ops_int" },
+	{ 0x7fccc099, "__ubsan_handle_load_invalid_value" },
+	{ 0x691edb72, "snd_pcm_period_elapsed" },
+	{ 0x7b37b558, "__ubsan_handle_type_mismatch_v1" },
+	{ 0xf2d62900, "dma_set_mask" },
+	{ 0xc5846169, "pci_disable_device" },
+	{ 0x28a89cfd, "v4l2_device_unregister" },
+	{ 0x18392016, "snd_mpu401_uart_new" },
+	{ 0x3c12dfe, "cancel_work_sync" },
+	{ 0xb43f9365, "ktime_get" },
+	{ 0xeae3dfd6, "__const_udelay" },
+	{ 0x982ccbd5, "pci_release_regions" },
+	{ 0x68a41536, "param_ops_bool" },
+	{ 0x409bcb62, "mutex_unlock" },
+	{ 0xedfbf652, "__ubsan_handle_shift_out_of_bounds" },
+	{ 0x3c3ff9fd, "sprintf" },
+	{ 0xc22cd4dd, "pv_ops" },
+	{ 0x91e0d49, "dma_set_coherent_mask" },
+	{ 0xb898d39, "v4l2_device_register" },
+	{ 0x66c54ff1, "input_event" },
+	{ 0x131e5561, "param_ops_charp" },
+	{ 0x8338fd8, "pci_set_master" },
+	{ 0xc0fec227, "snd_mpu401_uart_interrupt" },
+	{ 0xaed06536, "_dev_warn" },
+	{ 0xfb578fc5, "memset" },
+	{ 0xdbdf6c92, "ioport_resource" },
+	{ 0x99f86ed6, "snd_device_new" },
+	{ 0x3812050a, "_raw_spin_unlock_irqrestore" },
+	{ 0xe5c51729, "__ubsan_handle_divrem_overflow" },
+	{ 0x977f511b, "__mutex_init" },
+	{ 0x585079d2, "snd_pcm_set_ops" },
+	{ 0xa1c76e0a, "_cond_resched" },
+	{ 0x9debba24, "snd_pcm_hw_constraint_pow2" },
+	{ 0xb0de39d3, "pci_read_config_word" },
+	{ 0x5792f848, "strlcpy" },
+	{ 0x2ab7989d, "mutex_lock" },
+	{ 0x92d5838e, "request_threaded_irq" },
+	{ 0xc5a6d10b, "release_and_free_resource" },
+	{ 0xdaed65a6, "snd_pcm_lib_ioctl" },
+	{ 0x8c40307b, "__gameport_register_port" },
+	{ 0x9a4c322, "_dev_err" },
+	{ 0xe523ad75, "synchronize_irq" },
+	{ 0xe157cee9, "snd_ac97_suspend" },
+	{ 0x26be0b39, "snd_card_new" },
+	{ 0x332b73a1, "__ubsan_handle_out_of_bounds" },
+	{ 0xd111bb59, "_dev_info" },
+	{ 0xdecd0b29, "__stack_chk_fail" },
+	{ 0x94a09154, "input_register_device" },
+	{ 0x47941711, "_raw_spin_lock_irq" },
+	{ 0xb46f899, "gameport_unregister_port" },
+	{ 0x4e97c8d9, "input_free_device" },
+	{ 0x5f92956a, "snd_dma_free_pages" },
+	{ 0xd0c1e622, "pci_read_config_dword" },
+	{ 0x806fd764, "snd_dma_alloc_pages_fallback" },
+	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0x8b95e7b, "pci_unregister_driver" },
+	{ 0x31b7ad04, "kmem_cache_alloc_trace" },
+	{ 0xdbf17652, "_raw_spin_lock" },
+	{ 0x625a9e96, "snd_ac97_bus" },
+	{ 0xbfb093b7, "__dynamic_dev_dbg" },
+	{ 0x51760917, "_raw_spin_lock_irqsave" },
+	{ 0x3eeb2322, "__wake_up" },
+	{ 0x97ffda79, "snd_ac97_mixer" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x2ab40469, "input_unregister_device" },
+	{ 0x4a5eb426, "pci_request_regions" },
+	{ 0x6eed2630, "param_array_ops" },
+	{ 0x490b58c2, "snd_tea575x_init" },
+	{ 0xf354855a, "__pci_register_driver" },
+	{ 0xbec9194f, "snd_tea575x_exit" },
+	{ 0x3d549164, "snd_card_free" },
+	{ 0x2c3bd8c1, "snd_card_register" },
+	{ 0xc5b6f236, "queue_work_on" },
+	{ 0xe1f25fb, "snd_pcm_new" },
+	{ 0x656e4a6e, "snprintf" },
+	{ 0x2e9ea8cb, "snd_ac97_resume" },
+	{ 0xf51bf8b0, "pci_enable_device" },
+	{ 0xe8b136ae, "gameport_set_phys" },
+	{ 0xc1514a3b, "free_irq" },
+	{ 0x4f55cb4, "input_allocate_device" },
+};
+
+MODULE_INFO(depends, "snd-pcm,videodev,snd-mpu401-uart,snd,gameport,snd-ac97-codec,tea575x");
+
+MODULE_ALIAS("pci:v00001285d00000100sv*sd*bc04sc01i*");
+MODULE_ALIAS("pci:v0000125Dd00001968sv*sd*bc04sc01i*");
+MODULE_ALIAS("pci:v0000125Dd00001978sv*sd*bc04sc01i*");
+
+MODULE_INFO(srcversion, "621A3CF6A5C6BA4C8E3B494");

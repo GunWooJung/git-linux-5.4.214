@@ -1,0 +1,156 @@
+#include <linux/build-salt.h>
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+BUILD_SALT;
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__section(.gnu.linkonce.this_module) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef CONFIG_RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used __section(__versions) = {
+	{ 0xed93c0b3, "module_layout" },
+	{ 0x408916cd, "iscsi_offload_mesg" },
+	{ 0x72a990a4, "kmalloc_caches" },
+	{ 0xeb233a45, "__kmalloc" },
+	{ 0xf9a482f9, "msleep" },
+	{ 0x558a4438, "scsi_change_queue_depth" },
+	{ 0xe60548f0, "__cpuhp_remove_state" },
+	{ 0xe1e76060, "iscsi_host_remove" },
+	{ 0x765395c3, "param_ops_int" },
+	{ 0xd6c42a55, "__iscsi_put_task" },
+	{ 0x7b37b558, "__ubsan_handle_type_mismatch_v1" },
+	{ 0xc7ba3d4e, "dev_printk" },
+	{ 0x3794e54e, "iscsi_queuecommand" },
+	{ 0xb3635b01, "_raw_spin_lock_bh" },
+	{ 0x26c53b85, "iscsi_conn_stop" },
+	{ 0xd522f41c, "pci_dev_get" },
+	{ 0xc29957c3, "__x86_indirect_thunk_rcx" },
+	{ 0x87b8798d, "sg_next" },
+	{ 0xa42abdf9, "iscsi_eh_recover_target" },
+	{ 0x9551809a, "iscsi_unregister_transport" },
+	{ 0x1343058e, "iscsi_session_teardown" },
+	{ 0xc6f46339, "init_timer_key" },
+	{ 0x409bcb62, "mutex_unlock" },
+	{ 0x5c75775f, "dma_free_attrs" },
+	{ 0x20a57515, "iscsi_host_add" },
+	{ 0x5a96cdc6, "__ubsan_handle_builtin_unreachable" },
+	{ 0xedfbf652, "__ubsan_handle_shift_out_of_bounds" },
+	{ 0x3c3ff9fd, "sprintf" },
+	{ 0x6ab8a6c9, "iscsi_host_alloc" },
+	{ 0xc22cd4dd, "pv_ops" },
+	{ 0xabaae129, "kthread_create_on_node" },
+	{ 0xef735d71, "iscsi_lookup_endpoint" },
+	{ 0x15ba50a6, "jiffies" },
+	{ 0xc5e4a5d1, "cpumask_next" },
+	{ 0xeaab968, "kthread_bind" },
+	{ 0xd9a5ea54, "__init_waitqueue_head" },
+	{ 0x17de3d5, "nr_cpu_ids" },
+	{ 0xd6d0f7d4, "scsi_is_host_device" },
+	{ 0x97934ecf, "del_timer_sync" },
+	{ 0xfb578fc5, "memset" },
+	{ 0x9e683f75, "__cpu_possible_mask" },
+	{ 0x3bffcc92, "pci_iounmap" },
+	{ 0x3812050a, "_raw_spin_unlock_irqrestore" },
+	{ 0xe5c51729, "__ubsan_handle_divrem_overflow" },
+	{ 0xaf7d0f48, "current_task" },
+	{ 0x977f511b, "__mutex_init" },
+	{ 0xdee8133b, "iscsi_conn_start" },
+	{ 0xc5850110, "printk" },
+	{ 0xbcab6ee6, "sscanf" },
+	{ 0x85e73dd7, "kthread_stop" },
+	{ 0x5a5a2271, "__cpu_online_mask" },
+	{ 0x36be89e8, "iscsi_conn_send_pdu" },
+	{ 0x8cdb4c5e, "iscsi_session_get_param" },
+	{ 0xaf9b0ece, "iscsi_conn_teardown" },
+	{ 0xa1c76e0a, "_cond_resched" },
+	{ 0xab8926d2, "iscsi_host_free" },
+	{ 0xc809c147, "iscsi_conn_get_param" },
+	{ 0x532b1a31, "dma_alloc_attrs" },
+	{ 0x36db4b6, "blk_mq_rq_cpu" },
+	{ 0x2ab7989d, "mutex_lock" },
+	{ 0x636af174, "cnic_unregister_driver" },
+	{ 0x5c579670, "iscsi_destroy_endpoint" },
+	{ 0x24d273d1, "add_timer" },
+	{ 0x7c941d6, "__cpuhp_setup_state" },
+	{ 0xf4e6656e, "scsi_host_put" },
+	{ 0x81533963, "sysfs_format_mac" },
+	{ 0xfe487975, "init_wait_entry" },
+	{ 0x8837fcfd, "flush_signals" },
+	{ 0x9279ff47, "iscsi_set_param" },
+	{ 0x332b73a1, "__ubsan_handle_out_of_bounds" },
+	{ 0x5a91f248, "iscsi_session_failure" },
+	{ 0x618911fc, "numa_node" },
+	{ 0x93a219c, "ioremap_nocache" },
+	{ 0x49c41a57, "_raw_spin_unlock_bh" },
+	{ 0xdecd0b29, "__stack_chk_fail" },
+	{ 0x8ddd8aad, "schedule_timeout" },
+	{ 0x1000e51, "schedule" },
+	{ 0x9b9b5709, "cnic_register_driver" },
+	{ 0x38c97622, "iscsi_register_transport" },
+	{ 0xf4ae3b36, "iscsi_eh_device_reset" },
+	{ 0x2ea2c95c, "__x86_indirect_thunk_rax" },
+	{ 0xab37f21b, "wake_up_process" },
+	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0x31b7ad04, "kmem_cache_alloc_trace" },
+	{ 0xdbf17652, "_raw_spin_lock" },
+	{ 0xb19a5453, "__per_cpu_offset" },
+	{ 0x51760917, "_raw_spin_lock_irqsave" },
+	{ 0x8891bb40, "iscsi_conn_failure" },
+	{ 0x3eeb2322, "__wake_up" },
+	{ 0x20c430f8, "iscsi_eh_cmd_timed_out" },
+	{ 0xb3f7646e, "kthread_should_stop" },
+	{ 0x84834e9e, "iscsi_suspend_queue" },
+	{ 0x8c26d495, "prepare_to_wait_event" },
+	{ 0x8ad29bab, "_raw_write_unlock_bh" },
+	{ 0x5ed90adc, "int_to_scsilun" },
+	{ 0x150e3657, "_raw_read_lock_bh" },
+	{ 0xad10eb8, "_raw_read_unlock_bh" },
+	{ 0x6f6bac3f, "iscsi_create_endpoint" },
+	{ 0xee72f1bc, "iscsi_eh_abort" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x2c93838f, "scsi_dma_unmap" },
+	{ 0x69acdf38, "memcpy" },
+	{ 0xedc03953, "iounmap" },
+	{ 0xeae5711f, "set_user_nice" },
+	{ 0xe1ed698d, "_raw_write_lock_bh" },
+	{ 0xf1ed9eb1, "iscsi_session_setup" },
+	{ 0x92540fbf, "finish_wait" },
+	{ 0xbf463a3, "iscsi_host_get_param" },
+	{ 0x56a525e3, "iscsi_conn_bind" },
+	{ 0x972cc0f, "__iscsi_complete_pdu" },
+	{ 0xf7e00959, "iscsi_target_alloc" },
+	{ 0x8423aab5, "pci_dev_put" },
+	{ 0x29361773, "complete" },
+	{ 0x5c4e734e, "pci_iomap" },
+	{ 0x7f02188f, "__msecs_to_jiffies" },
+	{ 0x19ba7f74, "iscsi_session_recovery_timedout" },
+	{ 0xbac1dbb6, "iscsi_conn_setup" },
+	{ 0x4d1ff60a, "wait_for_completion_timeout" },
+	{ 0x1cd6f316, "param_ops_uint" },
+	{ 0x5b51db53, "iscsi_itt_to_task" },
+	{ 0xa67be39f, "iscsi_host_for_each_session" },
+	{ 0x1fce84d7, "scsi_dma_map" },
+};
+
+MODULE_INFO(depends, "scsi_transport_iscsi,libiscsi,cnic");
+
+
+MODULE_INFO(srcversion, "889D84ADD3E23DCF9B90AED");

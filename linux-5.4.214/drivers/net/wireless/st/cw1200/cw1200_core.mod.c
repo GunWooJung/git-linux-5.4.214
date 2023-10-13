@@ -1,0 +1,148 @@
+#include <linux/build-salt.h>
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+BUILD_SALT;
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__section(.gnu.linkonce.this_module) = {
+	.name = KBUILD_MODNAME,
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef CONFIG_RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used __section(__versions) = {
+	{ 0xed93c0b3, "module_layout" },
+	{ 0x2d3385d3, "system_wq" },
+	{ 0x282e8498, "ieee80211_rx_irqsafe" },
+	{ 0x72a990a4, "kmalloc_caches" },
+	{ 0xeb233a45, "__kmalloc" },
+	{ 0xf9a482f9, "msleep" },
+	{ 0x7f3966fa, "debugfs_create_dir" },
+	{ 0x7ee415d5, "single_open" },
+	{ 0x765395c3, "param_ops_int" },
+	{ 0x275867e8, "ieee80211_bss_get_elem" },
+	{ 0x7fccc099, "__ubsan_handle_load_invalid_value" },
+	{ 0x7b37b558, "__ubsan_handle_type_mismatch_v1" },
+	{ 0x41ed3709, "get_random_bytes" },
+	{ 0x8ce08cc0, "single_release" },
+	{ 0xe35ed617, "seq_puts" },
+	{ 0x1be6639b, "ieee80211_cqm_rssi_notify" },
+	{ 0xb3635b01, "_raw_spin_lock_bh" },
+	{ 0x7ef39823, "ieee80211_hdrlen" },
+	{ 0xffeedf6a, "delayed_work_timer_fn" },
+	{ 0xe8c8c43b, "ieee80211_beacon_get_tim" },
+	{ 0xd36dc10c, "get_random_u32" },
+	{ 0x58f84c2d, "seq_printf" },
+	{ 0x3c12dfe, "cancel_work_sync" },
+	{ 0x837b7b09, "__dynamic_pr_debug" },
+	{ 0x50827106, "ieee80211_unregister_hw" },
+	{ 0x9791d2e6, "ieee80211_channel_to_frequency" },
+	{ 0xeae3dfd6, "__const_udelay" },
+	{ 0xc6f46339, "init_timer_key" },
+	{ 0x9fa7184a, "cancel_delayed_work_sync" },
+	{ 0x409bcb62, "mutex_unlock" },
+	{ 0x40d94e98, "ieee80211_scan_completed" },
+	{ 0x5a96cdc6, "__ubsan_handle_builtin_unreachable" },
+	{ 0xd0a46a6a, "debugfs_create_file" },
+	{ 0xedfbf652, "__ubsan_handle_shift_out_of_bounds" },
+	{ 0x5b1c5c13, "debugfs_remove_recursive" },
+	{ 0x21ba44a5, "seq_read" },
+	{ 0xc22cd4dd, "pv_ops" },
+	{ 0x15ba50a6, "jiffies" },
+	{ 0xf21017d9, "mutex_trylock" },
+	{ 0xbe92ed72, "skb_trim" },
+	{ 0x120103ea, "__netdev_alloc_skb" },
+	{ 0xe1f1bcd1, "ieee80211_stop_queue" },
+	{ 0x19f945ca, "ieee80211_tx_status" },
+	{ 0xd9a5ea54, "__init_waitqueue_head" },
+	{ 0x17de3d5, "nr_cpu_ids" },
+	{ 0x131e5561, "param_ops_charp" },
+	{ 0x97934ecf, "del_timer_sync" },
+	{ 0xf89e6197, "skb_queue_purge" },
+	{ 0xaed06536, "_dev_warn" },
+	{ 0x3dad9978, "cancel_delayed_work" },
+	{ 0xc2448345, "default_llseek" },
+	{ 0xe5c51729, "__ubsan_handle_divrem_overflow" },
+	{ 0x201ec6c0, "cfg80211_get_bss" },
+	{ 0xe9ffc063, "down_trylock" },
+	{ 0x12422e18, "ieee80211_alloc_hw_nm" },
+	{ 0x977f511b, "__mutex_init" },
+	{ 0xc5850110, "printk" },
+	{ 0x449ad0a7, "memcmp" },
+	{ 0xa1c76e0a, "_cond_resched" },
+	{ 0xd523d85d, "skb_push" },
+	{ 0x2ab7989d, "mutex_lock" },
+	{ 0x8c03d20c, "destroy_workqueue" },
+	{ 0x6626afca, "down" },
+	{ 0xc38c83b8, "mod_timer" },
+	{ 0xbed6138e, "skb_pull" },
+	{ 0x32ee9868, "simple_open" },
+	{ 0x9a4c322, "_dev_err" },
+	{ 0x42160169, "flush_workqueue" },
+	{ 0xfe487975, "init_wait_entry" },
+	{ 0x9d6cba30, "cfg80211_find_elem_match" },
+	{ 0x332b73a1, "__ubsan_handle_out_of_bounds" },
+	{ 0x167c5967, "print_hex_dump" },
+	{ 0xc502ef3, "skb_queue_tail" },
+	{ 0xd111bb59, "_dev_info" },
+	{ 0x124c821, "cfg80211_put_bss" },
+	{ 0x49c41a57, "_raw_spin_unlock_bh" },
+	{ 0xb2fcb56d, "queue_delayed_work_on" },
+	{ 0xdecd0b29, "__stack_chk_fail" },
+	{ 0x4b740861, "ieee80211_sta_set_buffered" },
+	{ 0x8ddd8aad, "schedule_timeout" },
+	{ 0x1000e51, "schedule" },
+	{ 0xe345725f, "ieee80211_get_key_rx_seq" },
+	{ 0x67876151, "ieee80211_find_sta" },
+	{ 0x2ea2c95c, "__x86_indirect_thunk_rax" },
+	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0xcbd4898c, "fortify_panic" },
+	{ 0x31b7ad04, "kmem_cache_alloc_trace" },
+	{ 0xdbf17652, "_raw_spin_lock" },
+	{ 0xbfb093b7, "__dynamic_dev_dbg" },
+	{ 0x2e056e00, "ieee80211_wake_queue" },
+	{ 0xdc67eaad, "param_ops_byte" },
+	{ 0x3eeb2322, "__wake_up" },
+	{ 0x8c26d495, "prepare_to_wait_event" },
+	{ 0x926d56bd, "ieee80211_register_hw" },
+	{ 0xffa2ff29, "ieee80211_pspoll_get" },
+	{ 0xda2b5d09, "seq_lseek" },
+	{ 0x73d446e6, "ieee80211_nullfunc_get" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x69acdf38, "memcpy" },
+	{ 0x6eed2630, "param_array_ops" },
+	{ 0x7aff77a3, "__cpu_present_mask" },
+	{ 0xcf2a6966, "up" },
+	{ 0x80500894, "request_firmware" },
+	{ 0xbece1aed, "ieee80211_probereq_get" },
+	{ 0x510d772f, "ieee80211_free_hw" },
+	{ 0x92540fbf, "finish_wait" },
+	{ 0x63c4d61f, "__bitmap_weight" },
+	{ 0x3b89b540, "skb_dequeue" },
+	{ 0xc5b6f236, "queue_work_on" },
+	{ 0xb0e602eb, "memmove" },
+	{ 0xad263612, "consume_skb" },
+	{ 0x7f02188f, "__msecs_to_jiffies" },
+	{ 0xf89bc02c, "skb_put" },
+	{ 0x13c49cc2, "_copy_from_user" },
+	{ 0xdf9208c0, "alloc_workqueue" },
+	{ 0x5c9109de, "release_firmware" },
+	{ 0x88088c66, "ieee80211_connection_loss" },
+	{ 0xc8dcc62a, "krealloc" },
+};
+
+MODULE_INFO(depends, "mac80211,cfg80211");
+
+
+MODULE_INFO(srcversion, "E0EAB25D75C32482C324034");

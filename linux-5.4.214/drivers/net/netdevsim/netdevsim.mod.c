@@ -1,0 +1,155 @@
+#include <linux/build-salt.h>
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+BUILD_SALT;
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__section(.gnu.linkonce.this_module) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef CONFIG_RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used __section(__versions) = {
+	{ 0xed93c0b3, "module_layout" },
+	{ 0x958767a4, "register_netdevice" },
+	{ 0x37559ef6, "devlink_port_register" },
+	{ 0x2d3385d3, "system_wq" },
+	{ 0xdc274b8f, "bus_register" },
+	{ 0x72a990a4, "kmalloc_caches" },
+	{ 0xeb233a45, "__kmalloc" },
+	{ 0xf9a482f9, "msleep" },
+	{ 0x86090d69, "devlink_reload_enable" },
+	{ 0x34d3b8d1, "driver_register" },
+	{ 0x619cb7dd, "simple_read_from_buffer" },
+	{ 0x13f08476, "xdp_attachment_flags_ok" },
+	{ 0x55e43c11, "devlink_reload_disable" },
+	{ 0x91fc7183, "generic_file_llseek" },
+	{ 0x7f3966fa, "debugfs_create_dir" },
+	{ 0x7ee415d5, "single_open" },
+	{ 0x7fccc099, "__ubsan_handle_load_invalid_value" },
+	{ 0x1f563160, "bpf_offload_dev_priv" },
+	{ 0x73bffaad, "devlink_param_driverinit_value_get" },
+	{ 0x7b37b558, "__ubsan_handle_type_mismatch_v1" },
+	{ 0xb6f93a5b, "bpf_offload_dev_create" },
+	{ 0x41ed3709, "get_random_bytes" },
+	{ 0x1b6314fd, "in_aton" },
+	{ 0x8ce08cc0, "single_release" },
+	{ 0xc7a4fbed, "rtnl_lock" },
+	{ 0x7c96cbe4, "xdp_attachment_query" },
+	{ 0xe8b9722d, "bpf_offload_dev_netdev_unregister" },
+	{ 0x2d09a5e4, "devlink_resource_size_get" },
+	{ 0xffeedf6a, "delayed_work_timer_fn" },
+	{ 0x58f84c2d, "seq_printf" },
+	{ 0x56470118, "__warn_printk" },
+	{ 0xc8ef0dff, "devlink_resources_unregister" },
+	{ 0x87664ac0, "devlink_traps_register" },
+	{ 0xc6f46339, "init_timer_key" },
+	{ 0x9fa7184a, "cancel_delayed_work_sync" },
+	{ 0x409bcb62, "mutex_unlock" },
+	{ 0xd5abe2d2, "devlink_alloc" },
+	{ 0x77d04e4d, "devlink_params_register" },
+	{ 0x5a96cdc6, "__ubsan_handle_builtin_unreachable" },
+	{ 0xd0a46a6a, "debugfs_create_file" },
+	{ 0x4629334c, "__preempt_count" },
+	{ 0x299e460, "xdp_attachment_setup" },
+	{ 0x3c3ff9fd, "sprintf" },
+	{ 0x5b1c5c13, "debugfs_remove_recursive" },
+	{ 0x21ba44a5, "seq_read" },
+	{ 0xc22cd4dd, "pv_ops" },
+	{ 0xe5bd0162, "devlink_trap_report" },
+	{ 0x57d403e2, "debugfs_create_u32" },
+	{ 0xfb578fc5, "memset" },
+	{ 0x6d2fc5a6, "net_namespace_list" },
+	{ 0xc21708cd, "unregister_pernet_subsys" },
+	{ 0xdeeb6e3e, "device_register" },
+	{ 0x977f511b, "__mutex_init" },
+	{ 0xc5850110, "printk" },
+	{ 0xbcab6ee6, "sscanf" },
+	{ 0x3c3fce39, "__local_bh_enable_ip" },
+	{ 0xc7352586, "devlink_resource_occ_get_register" },
+	{ 0x449ad0a7, "memcmp" },
+	{ 0xdc4bcaf4, "devlink_params_publish" },
+	{ 0x2816d12d, "free_netdev" },
+	{ 0x86f434e2, "driver_unregister" },
+	{ 0xffb7c514, "ida_free" },
+	{ 0x20e66e91, "bpf_offload_dev_match" },
+	{ 0xfc3bba0f, "unregister_fib_notifier" },
+	{ 0x2ab7989d, "mutex_lock" },
+	{ 0xd22d728, "devlink_region_snapshot_create" },
+	{ 0x32ee9868, "simple_open" },
+	{ 0x3f7ad254, "debugfs_create_bool" },
+	{ 0x721c9d1f, "init_net" },
+	{ 0xc94d2bd9, "bus_unregister" },
+	{ 0x7c96d2a1, "devlink_port_unregister" },
+	{ 0x1e8aee9f, "rtnl_link_unregister" },
+	{ 0x352ec68b, "bpf_offload_dev_destroy" },
+	{ 0x1f32cd4f, "devlink_param_driverinit_value_set" },
+	{ 0xf1bf5ba2, "devlink_region_create" },
+	{ 0x48ea6a81, "flow_block_cb_setup_simple" },
+	{ 0xa5676a4d, "devlink_flash_update_begin_notify" },
+	{ 0x332b73a1, "__ubsan_handle_out_of_bounds" },
+	{ 0x971450ec, "devlink_flash_update_end_notify" },
+	{ 0xe1b3db29, "bpf_verifier_log_write" },
+	{ 0x92f8784b, "__alloc_skb" },
+	{ 0xffe9c680, "devlink_resource_register" },
+	{ 0xb2fcb56d, "queue_delayed_work_on" },
+	{ 0xdecd0b29, "__stack_chk_fail" },
+	{ 0xb8b9f817, "kmalloc_order_trace" },
+	{ 0xc6fb8710, "alloc_netdev_mqs" },
+	{ 0xfb5907f, "devlink_flash_update_status_notify" },
+	{ 0x1709a80e, "register_pernet_subsys" },
+	{ 0xb83b2e62, "devlink_traps_unregister" },
+	{ 0xbdfb6dbb, "__fentry__" },
+	{ 0x216cc777, "netdev_err" },
+	{ 0xf0fa7dc3, "ether_setup" },
+	{ 0x31b7ad04, "kmem_cache_alloc_trace" },
+	{ 0xdbf17652, "_raw_spin_lock" },
+	{ 0x4aebfc6b, "unregister_netdevice_queue" },
+	{ 0x473e7988, "eth_validate_addr" },
+	{ 0xd0828e31, "devlink_free" },
+	{ 0xda2b5d09, "seq_lseek" },
+	{ 0xb94aa16a, "devlink_port_type_clear" },
+	{ 0x23686b86, "devlink_register" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x3b6c41ea, "kstrtouint" },
+	{ 0xe6414154, "devlink_region_shapshot_id_get" },
+	{ 0x69acdf38, "memcpy" },
+	{ 0x66677a36, "devlink_port_attrs_set" },
+	{ 0x53e1f602, "devlink_params_unregister" },
+	{ 0xa4f157b5, "rtnl_link_register" },
+	{ 0x3f1c46fa, "debugfs_create_symlink" },
+	{ 0x5a4e4713, "device_unregister" },
+	{ 0x656e4a6e, "snprintf" },
+	{ 0xad263612, "consume_skb" },
+	{ 0x6cff3b90, "register_fib_notifier" },
+	{ 0x85670f1d, "rtnl_is_locked" },
+	{ 0xf89bc02c, "skb_put" },
+	{ 0x820db7ec, "eth_mac_addr" },
+	{ 0xa410a295, "devlink_region_destroy" },
+	{ 0x7946bcc, "devlink_unregister" },
+	{ 0xc8a8e85f, "bpf_offload_dev_netdev_register" },
+	{ 0x6e720ff2, "rtnl_unlock" },
+	{ 0x4aec3028, "devlink_port_type_eth_set" },
+	{ 0xe7a02573, "ida_alloc_range" },
+};
+
+MODULE_INFO(depends, "");
+
+
+MODULE_INFO(srcversion, "B07B79E3709CD9E9E544449");

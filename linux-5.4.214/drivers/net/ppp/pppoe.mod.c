@@ -1,0 +1,102 @@
+#include <linux/build-salt.h>
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+BUILD_SALT;
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__section(.gnu.linkonce.this_module) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef CONFIG_RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used __section(__versions) = {
+	{ 0xed93c0b3, "module_layout" },
+	{ 0xc3fec769, "sock_no_mmap" },
+	{ 0x71bd10b7, "sock_no_getsockopt" },
+	{ 0x1b4d36bf, "sock_no_setsockopt" },
+	{ 0xcc0f2a0e, "sock_no_shutdown" },
+	{ 0xe0558df8, "sock_no_listen" },
+	{ 0xc27db8b4, "pppox_compat_ioctl" },
+	{ 0x631ea8b3, "pppox_ioctl" },
+	{ 0x7407e9a5, "datagram_poll" },
+	{ 0x66764b9d, "sock_no_accept" },
+	{ 0x91857821, "sock_no_socketpair" },
+	{ 0xc0e103cb, "sock_no_bind" },
+	{ 0xe0ff7a18, "unregister_pppox_proto" },
+	{ 0xd8f73fc4, "dev_remove_pack" },
+	{ 0x9d0d6206, "unregister_netdevice_notifier" },
+	{ 0x4edc58ab, "unregister_pernet_device" },
+	{ 0xd2da1048, "register_netdevice_notifier" },
+	{ 0x81f944be, "dev_add_pack" },
+	{ 0x7b03533c, "proto_unregister" },
+	{ 0xa3add089, "register_pppox_proto" },
+	{ 0x79be1f9a, "proto_register" },
+	{ 0x9bc2f868, "register_pernet_device" },
+	{ 0xa1713526, "pskb_trim_rcsum_slow" },
+	{ 0x112574c9, "__sk_receive_skb" },
+	{ 0x7f5f891f, "skb_pull_rcsum" },
+	{ 0x8f0704a3, "ppp_register_net_channel" },
+	{ 0x5098caed, "dev_get_by_name" },
+	{ 0x90a69765, "__pskb_pull_tail" },
+	{ 0x30313dd3, "skb_clone" },
+	{ 0xc5b6f236, "queue_work_on" },
+	{ 0x2d3385d3, "system_wq" },
+	{ 0xbb9ab629, "ppp_input" },
+	{ 0x5fe87dfe, "sock_queue_rcv_skb" },
+	{ 0xf89e6197, "skb_queue_purge" },
+	{ 0x8ad29bab, "_raw_write_unlock_bh" },
+	{ 0xe1ed698d, "_raw_write_lock_bh" },
+	{ 0xa919f28c, "dev_get_by_name_rcu" },
+	{ 0x13c49cc2, "_copy_from_user" },
+	{ 0x6729d3df, "__get_user_4" },
+	{ 0xb2fd5ceb, "__put_user_4" },
+	{ 0x332b73a1, "__ubsan_handle_out_of_bounds" },
+	{ 0x150e3657, "_raw_read_lock_bh" },
+	{ 0xf4d0b8fb, "proc_create_net_data" },
+	{ 0x5a96cdc6, "__ubsan_handle_builtin_unreachable" },
+	{ 0xad10eb8, "_raw_read_unlock_bh" },
+	{ 0x296695f, "refcount_warn_saturate" },
+	{ 0x285c8d25, "sk_free" },
+	{ 0x534ad155, "pppox_unbind_sock" },
+	{ 0xe35ed617, "seq_puts" },
+	{ 0x58f84c2d, "seq_printf" },
+	{ 0xcbaa4b74, "remove_proc_entry" },
+	{ 0xa0554d18, "release_sock" },
+	{ 0xc4a9f597, "_copy_from_iter_full" },
+	{ 0x88db9f48, "__check_object_size" },
+	{ 0xf89bc02c, "skb_put" },
+	{ 0x22f164ce, "sock_wmalloc" },
+	{ 0x5c05256a, "lock_sock_nested" },
+	{ 0xdecd0b29, "__stack_chk_fail" },
+	{ 0xad263612, "consume_skb" },
+	{ 0x6dc0618f, "skb_copy_datagram_iter" },
+	{ 0x3f37e34f, "skb_recv_datagram" },
+	{ 0xd8e6cdd2, "kfree_skb" },
+	{ 0xcfb5d782, "pskb_expand_head" },
+	{ 0xba505b9b, "dev_queue_xmit" },
+	{ 0x2ea2c95c, "__x86_indirect_thunk_rax" },
+	{ 0xffd8af80, "sock_init_data" },
+	{ 0xefb8cb40, "sk_alloc" },
+	{ 0xbdfb6dbb, "__fentry__" },
+};
+
+MODULE_INFO(depends, "pppox");
+
+
+MODULE_INFO(srcversion, "C5102176E4C284535947129");

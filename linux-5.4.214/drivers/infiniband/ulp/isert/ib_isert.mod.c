@@ -1,0 +1,156 @@
+#include <linux/build-salt.h>
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+BUILD_SALT;
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__section(.gnu.linkonce.this_module) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef CONFIG_RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used __section(__versions) = {
+	{ 0xed93c0b3, "module_layout" },
+	{ 0x765395c3, "param_ops_int" },
+	{ 0x769d9e14, "iscsit_unregister_transport" },
+	{ 0x42160169, "flush_workqueue" },
+	{ 0x1a7d5251, "iscsit_register_transport" },
+	{ 0x8c03d20c, "destroy_workqueue" },
+	{ 0x63c4d61f, "__bitmap_weight" },
+	{ 0x9e683f75, "__cpu_possible_mask" },
+	{ 0x17de3d5, "nr_cpu_ids" },
+	{ 0xdf9208c0, "alloc_workqueue" },
+	{ 0x7b37b558, "__ubsan_handle_type_mismatch_v1" },
+	{ 0xa8064d4, "__ib_alloc_pd" },
+	{ 0xc96d535e, "__ib_alloc_cq_user" },
+	{ 0xc60d0620, "__num_online_cpus" },
+	{ 0xc47d8e9a, "__rdma_accept" },
+	{ 0x8a43c928, "rdma_reject" },
+	{ 0x907df803, "rdma_event_msg" },
+	{ 0xcf2a6966, "up" },
+	{ 0x92540fbf, "finish_wait" },
+	{ 0x8c26d495, "prepare_to_wait_event" },
+	{ 0x1000e51, "schedule" },
+	{ 0xfe487975, "init_wait_entry" },
+	{ 0xa1c76e0a, "_cond_resched" },
+	{ 0x69ae3722, "rdma_reject_msg" },
+	{ 0x977f511b, "__mutex_init" },
+	{ 0x31b7ad04, "kmem_cache_alloc_trace" },
+	{ 0x72a990a4, "kmalloc_caches" },
+	{ 0x4a0b1193, "rdma_listen" },
+	{ 0x9197013a, "rdma_bind_addr" },
+	{ 0xa8198878, "__rdma_create_id" },
+	{ 0x721c9d1f, "init_net" },
+	{ 0xf888ca21, "sg_init_table" },
+	{ 0xeb233a45, "__kmalloc" },
+	{ 0x4fd818fc, "iscsit_process_text_cmd" },
+	{ 0xebea38e2, "iscsit_setup_text_cmd" },
+	{ 0x7882130d, "iscsit_find_cmd_from_itt" },
+	{ 0x3468eeb7, "iscsit_set_unsolicited_dataout" },
+	{ 0x250f040f, "iscsit_sequence_cmd" },
+	{ 0x152e53a, "iscsit_process_scsi_cmd" },
+	{ 0xba97a488, "iscsit_setup_scsi_cmd" },
+	{ 0xb825eead, "iscsit_process_nop_out" },
+	{ 0x9b8e5900, "iscsit_setup_nop_out" },
+	{ 0x4e445940, "iscsit_handle_logout_cmd" },
+	{ 0xdb2eee31, "iscsit_check_dataout_payload" },
+	{ 0x905695ab, "sg_copy_from_buffer" },
+	{ 0x32ea79e6, "iscsit_check_dataout_hdr" },
+	{ 0x424377b9, "iscsit_handle_task_mgt_cmd" },
+	{ 0x1ed8b599, "__x86_indirect_thunk_r8" },
+	{ 0x69acdf38, "memcpy" },
+	{ 0xb8b9f817, "kmalloc_order_trace" },
+	{ 0x81ac77cd, "iscsit_build_text_rsp" },
+	{ 0x71729a69, "iscsit_build_logout_rsp" },
+	{ 0x5924ab0, "iscsit_build_task_mgt_rsp" },
+	{ 0xbfdcb43a, "__x86_indirect_thunk_r11" },
+	{ 0xa86e4a9a, "iscsit_build_reject" },
+	{ 0x1d24c881, "___ratelimit" },
+	{ 0xd932ff7, "iscsit_build_rsp_pdu" },
+	{ 0x8a834248, "iscsit_build_nopin_rsp" },
+	{ 0x4c9d28b0, "phys_base" },
+	{ 0x56470118, "__warn_printk" },
+	{ 0xecadd7c7, "dev_driver_string" },
+	{ 0x6dd853a6, "dma_direct_map_page" },
+	{ 0x97651e6c, "vmemmap_base" },
+	{ 0x7cd8d75e, "page_offset_base" },
+	{ 0x445a81ce, "boot_cpu_data" },
+	{ 0x9cb986f2, "vmalloc_base" },
+	{ 0xd7bd097a, "target_execute_cmd" },
+	{ 0xfdcdfe32, "transport_generic_request_failure" },
+	{ 0xb4e9db11, "iscsit_tmr_post_handler" },
+	{ 0x6b2dc060, "dump_stack" },
+	{ 0xe21f252b, "iscsit_logout_post_handler" },
+	{ 0xf5398a13, "iscsit_cause_connection_reinstatement" },
+	{ 0xaf7d0f48, "current_task" },
+	{ 0x296695f, "refcount_warn_saturate" },
+	{ 0x5a96cdc6, "__ubsan_handle_builtin_unreachable" },
+	{ 0x3eeb2322, "__wake_up" },
+	{ 0xc5622172, "ib_destroy_qp_user" },
+	{ 0xae316914, "rdma_destroy_id" },
+	{ 0xb526d94f, "dma_direct_unmap_page" },
+	{ 0xc1d7d8bf, "dma_direct_sync_single_for_device" },
+	{ 0x3bd23fd8, "dma_direct_sync_single_for_cpu" },
+	{ 0x9fe59f14, "dma_ops" },
+	{ 0xc5b6f236, "queue_work_on" },
+	{ 0x4d1ff60a, "wait_for_completion_timeout" },
+	{ 0x7f8a9579, "target_wait_for_sess_cmds" },
+	{ 0xdb554a6b, "target_sess_cmd_list_set_waiting" },
+	{ 0x66979fd2, "ib_drain_qp" },
+	{ 0xe4d5756b, "target_put_sess_cmd" },
+	{ 0x27ceab29, "iscsit_release_cmd" },
+	{ 0x2bc21f33, "transport_generic_free_cmd" },
+	{ 0x3ef0dea7, "iscsit_stop_dataout_timer" },
+	{ 0xe67013f5, "rdma_rw_ctx_destroy_signature" },
+	{ 0x5b8c1e70, "rdma_rw_ctx_destroy" },
+	{ 0xa684de14, "iscsit_allocate_cmd" },
+	{ 0xaec30595, "rdma_disconnect" },
+	{ 0x9e9ce95d, "rdma_notify" },
+	{ 0xf6ed3334, "ib_event_msg" },
+	{ 0x13426479, "rdma_rw_ctx_signature_init" },
+	{ 0x1b2b718b, "rdma_rw_ctx_post" },
+	{ 0x7ae21060, "rdma_rw_ctx_init" },
+	{ 0xe6977f13, "rdma_create_qp" },
+	{ 0x7fccc099, "__ubsan_handle_load_invalid_value" },
+	{ 0x6bd0e573, "down_interruptible" },
+	{ 0x49c41a57, "_raw_spin_unlock_bh" },
+	{ 0xb3635b01, "_raw_spin_lock_bh" },
+	{ 0xe5c51729, "__ubsan_handle_divrem_overflow" },
+	{ 0x720d6915, "ib_check_mr_status" },
+	{ 0x262e823a, "wait_for_completion_interruptible" },
+	{ 0xd9a5ea54, "__init_waitqueue_head" },
+	{ 0x25c77496, "ib_dealloc_pd_user" },
+	{ 0x409bcb62, "mutex_unlock" },
+	{ 0x2ab7989d, "mutex_lock" },
+	{ 0x29361773, "complete" },
+	{ 0xb2fcb56d, "queue_delayed_work_on" },
+	{ 0x2d3385d3, "system_wq" },
+	{ 0xe5840ec6, "ib_wc_status_msg" },
+	{ 0xc5850110, "printk" },
+	{ 0xdecd0b29, "__stack_chk_fail" },
+	{ 0x2ea2c95c, "__x86_indirect_thunk_rax" },
+	{ 0x37a0cba, "kfree" },
+	{ 0xdb099f5f, "ib_free_cq_user" },
+	{ 0xbdfb6dbb, "__fentry__" },
+};
+
+MODULE_INFO(depends, "iscsi_target_mod,ib_core,rdma_cm,target_core_mod");
+
+
+MODULE_INFO(srcversion, "D4FFEFBC1AF84712C1CBE33");
